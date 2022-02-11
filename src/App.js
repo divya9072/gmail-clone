@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Mail from "./components/Mail/mail";
 import Emaillist from "./components/EmailList/Emaillist";
 
-function App() {
+const App=()=> {
   return (
     <div className="app">
       <Header />
