@@ -5,10 +5,13 @@ import {
 import { Checkbox, IconButton } from "@mui/material";
 import React from "react";
 import "./emailrow.css";
+import{useNavigate} from "react-router-dom"
 
 const EmailRow = ({ id, title, subject, description, time }) => {
+  const navigate = useNavigate()
+
   return (
-    <div className="emailrow">
+    <div onClick={()=> navigate('/mail')}className="emailrow">
       <div className="emailrow__options">
         <Checkbox />
         <IconButton>
