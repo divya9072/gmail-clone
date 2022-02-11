@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Mail from "./components/Mail/mail";
 import Emaillist from "./components/EmailList/Emaillist";
 
+
 const App=()=> {
   return (
     <div className="app">
@@ -19,6 +20,7 @@ const App=()=> {
         </BrowserRouter>
       </div>
     </div>
+
   );
 }
 
