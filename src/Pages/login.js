@@ -1,10 +1,8 @@
 import { Button } from "@mui/material";
 import React from "react";
 import "./login.css";
-// import { useNavigate } from "react-router-dom";
 
 const Login = () => {
-  // const navigate = useNavigate();
   return (
     <div className="login">
       <div className="login__container">
@@ -16,7 +14,6 @@ const Login = () => {
           LOGIN
         </Button>
       </div>
-      {/* onClick={()=> navigate("/loginpage")} */}
     </div>
   );
 };
