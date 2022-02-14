@@ -1,0 +1,65 @@
+
+.body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .login-div {
+    max-width: 430px;
+    padding: 35px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding-top: 4rem;
+  }
+  .logo  {
+    width:100px;
+   
+    border-radius: 50%;
+    margin:0 auto;
+  }
+
+  .logo > img{
+      width: 100%;
+      height: auto;
+  }
+
+.logo__heading {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 15px;
+}
+.logo__heading > span{
+  padding-bottom: 8px;
+  font-size: 17px;
+}
+.login-div > input{
+  width: 80%;
+  padding: 15px;
+  color: black;
+  border: 1px solid rgb(133, 133, 133,133);
+  margin: 15px;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo__footer{
+  padding: 20px;
+  font-size: 15px;
+
+}
+.logo__footer > span > b{
+  color: #1a73e8;
+}
+
+.logo__button{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-right: 1rem;
+}
