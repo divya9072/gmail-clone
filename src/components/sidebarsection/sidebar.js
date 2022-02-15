@@ -6,14 +6,17 @@ import InboxIcon from "@mui/icons-material/Inbox";
 import "./sidebar.css";
 import SidebarOption from "./sidebaroption";
 import { AccessTime, Duo, ExpandMore, LabelImportant, NearMe, Note, Person, Phone } from "@mui/icons-material";
+import{useHistory} from "react-router-dom"
 
 const Sidebar = () => {
+  const history = useHistory()
   return (
     <div className="sidebar">
       <Button
         startIcon={<AddIcon fontSize="large" />}
         className="sidebar__compose"
         style={{ color: "black" }}
+        onClick={()=> history.push('/compose')}
       >
         Compose
       </Button>
