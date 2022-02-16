@@ -23,7 +23,7 @@ const Mail = () => {
     <div className="mail">
       <div className="mail__tools">
         <div className="mail__toolsleft">
-          <IconButton onClick={() => history.push("/")}>
+          <IconButton onClick={() => history.push("/main")}>
             <ArrowBack />
           </IconButton>
           <IconButton>
