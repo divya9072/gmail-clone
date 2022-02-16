@@ -17,7 +17,7 @@ const App = () => {
       <div className="app">
         <Router>
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/main">
               <Header />
               <div className="app__body">
                 <Sidebar />
@@ -31,7 +31,7 @@ const App = () => {
                 <Mail />
               </div>
             </Route>
-            <Route path="/homepage">
+            <Route exact path="/">
               <div>
                 <Login />
               </div>
@@ -46,7 +46,7 @@ const App = () => {
                 <Register />
               </div>
             </Route>
-            <Route exact path="/compose">
+            <Route path="/compose">
               <Header />
               <div className="app__body">
                 <Sidebar />

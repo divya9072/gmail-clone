@@ -10,7 +10,7 @@ const SendMail = () => {
     <div className='sendmail'>
       <div className='sendmail__header'>
         <h3>New Message</h3>
-        <CloseIcon className='sendmail__close' onClick={()=> history.push('/')}/>
+        <CloseIcon className='sendmail__close' onClick={()=> history.push('/main')}/>
       </div>
       <form>
         <input placeholder='To' type='text'/>
