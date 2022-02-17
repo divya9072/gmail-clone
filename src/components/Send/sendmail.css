@@ -12,6 +12,7 @@
     flex-direction: column;
     border: 1px solid whitesmoke;
     box-shadow: 0px 5px 7px 0px rgba(0,0,0,0.24);
+    
 }
 .sendmail__header{
     padding: 13px;
@@ -53,4 +54,11 @@
 
 .sendmail__message{
     flex: 1;
+}
+
+.send__errors {
+    background-color: white !important;
+    color: red;
+    text-align: right;
+    padding: 2px;        
 }

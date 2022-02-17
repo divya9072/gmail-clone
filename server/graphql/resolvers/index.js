@@ -11,6 +11,9 @@ module.exports={
             return await User.find()
             
         },
+        getMails:async()=>{
+            return await Post.find()
+        },
     },
     Mutation:{
         ...userResolvers.Mutation,
