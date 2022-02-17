@@ -25,6 +25,7 @@ input RegisterInput{
 type Query{
     hello:String
     getPosts:[User] 
+    getMails:[Post]
 }
 input PostInput{
     to:String

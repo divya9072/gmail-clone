@@ -7,6 +7,7 @@ import "./sidebar.css";
 import SidebarOption from "./sidebaroption";
 import { AccessTime, Duo, ExpandMore, LabelImportant, NearMe, Note, Person, Phone } from "@mui/icons-material";
 import{useHistory} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const history = useHistory()
@@ -20,11 +21,11 @@ const Sidebar = () => {
       >
         Compose
       </Button>
-      <SidebarOption Icon={InboxIcon} title="Inbox" number={54} selected={true}></SidebarOption>
+      <Link to={'/main'} style={{ textDecoration: 'none' }}><SidebarOption Icon={InboxIcon} title="Inbox" number={54} selected={true}></SidebarOption></Link>
       <SidebarOption Icon={StarIcon} title="Starred" number={54}></SidebarOption>
       <SidebarOption Icon={AccessTime} title="Snoozed" number={54}></SidebarOption>
       <SidebarOption Icon={LabelImportant} title="Important" number={54}></SidebarOption>
-      <SidebarOption Icon={NearMe} title="Sent" number={54}></SidebarOption>
+      <Link to={'/sent'} style={{ textDecoration: 'none' }}><SidebarOption Icon={NearMe} title="Sent" number={54} ></SidebarOption></Link>
       <SidebarOption Icon={Note} title="Drafts" number={54}></SidebarOption>
       <SidebarOption Icon={ExpandMore} title="More" number={54}></SidebarOption>
     <div className="sidebar__footer">

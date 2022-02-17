@@ -10,6 +10,7 @@ import Emaillist from "./components/EmailList/Emaillist";
 import Register from "./Pages/register";
 import { AuthProvider } from "./context/auth";
 import SendMail from "./components/Send/sendmail";
+import SentPage from "./components/Send/sentPage";
 
 const App = () => {
   return (
@@ -53,6 +54,13 @@ const App = () => {
                 <Emaillist />
               </div>
               <SendMail />
+            </Route>
+            <Route path="/sent">
+              <Header />
+              <div className="app__body">
+                <Sidebar />
+                <SentPage />
+              </div>
             </Route>
           </Switch>
         </Router>
