@@ -36,6 +36,7 @@ type Mutation{
     register(registerInput:RegisterInput):User!
     login(username: String!, password: String!): User!
     createPost(post:PostInput):Post
+    deletePost(id:String):String
 }
 `
 module.exports=typeDefs;

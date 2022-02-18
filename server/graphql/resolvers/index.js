@@ -22,6 +22,11 @@ module.exports={
             const post= await new Post({to,subject,message}).save();
             return post;
         },
+        deletePost:async(parent,args,context,info)=>{
+            const {id}=args
+            await Post.findByIdAndDelete(id)
+            return "Deleted";
+        },
     },
     
 }

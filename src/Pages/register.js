@@ -130,7 +130,7 @@ const Register = (props) => {
                   className="signup__button"
                   variant="text"
                   color="primary"
-                  onClick={()=> history.push('/login')}
+                  onClick={()=> history.push('/main')}
                 >
                   Sign in instead
                 </Button>
