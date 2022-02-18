@@ -6,6 +6,7 @@ import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useMutation } from '@apollo/react-hooks';
 import { CREATE_POST } from "../../GraphQl/mutation";
+import { FETCH_MAILS_QUERY } from "../../GraphQl/query";
 
 const SendMail = () => {
   const history = useHistory();
@@ -26,8 +27,11 @@ const inputHandler=(event)=>{
     const addMail=()=>{
         console.log(inputField);
         createPost({
-            variables:inputField
+            variables:inputField,
+            refetchQueries:[{query:FETCH_MAILS_QUERY}]
         })
+        
+        
     };
 
   const { register, handleSubmit, watch, errors } = useForm();

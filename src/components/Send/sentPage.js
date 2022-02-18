@@ -1,5 +1,4 @@
 import React from "react";
-import "./sentpage.css";
 import { FETCH_MAILS_QUERY } from "../../GraphQl/query";
 import { useQuery } from "@apollo/react-hooks";
 
@@ -7,6 +6,7 @@ import { useQuery } from "@apollo/react-hooks";
 import {
     ChevronLeft,
     ChevronRight,
+    Delete,
     KeyboardHide,
     LocalOffer,
     MoreVert,
